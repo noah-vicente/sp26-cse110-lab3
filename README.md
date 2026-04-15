@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://noah-vicente.github.io/Lab2_Starter/
+# sp26-cse110-lab3
+https://noah-vicente.github.io/sp26-cse110-lab3/
