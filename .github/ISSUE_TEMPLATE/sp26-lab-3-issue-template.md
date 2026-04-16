@@ -7,6 +7,4 @@ assignees: noah-vicente
 
 ---
 
-Contributor Name: <full name>
-Issue Topic: <issue topic>
-Issue Description: <issue description>
+
