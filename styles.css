@@ -1,0 +1,141 @@
+:root {
+    --background-color: lightblue;
+    --font-color: black;
+}
+
+body {
+    background-color: var(--background-color);
+    display: grid;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+    background-color: #5fcef3;
+    border-style: solid;
+    border-color: hsl(0, 3%, 53%);
+    border-radius: 3mm;
+    border-width: 1mm;
+    height: fit-content;
+    width:fit-content;
+    padding-top: 2mm;
+    padding-right: 2mm;
+    padding-left: 2mm;
+    padding-bottom: 2mm;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    font-size: 2.5rem;
+}
+
+/* Descendent */
+div p {
+    font-style: italic;
+}
+/* Child */
+div > h2 {
+    color: var(--font-color);
+}
+
+/* Adjacent Siblings */
+h2 + section {
+    border: 0.5mm solid black; /* shorthand */
+}
+
+/* General Sibling */
+h1 ~ p {
+    background-color: var(--background-color);
+}
+
+h3.meeting-name {
+    font-weight: bold;
+    text-align: center;
+    color: color(display-p3 0.7 0.71 0.82);
+}
+
+p {
+    font-size: 16px;
+}
+p:focus {
+    border: 0.5mm solid blue;
+}
+
+section {
+    padding: 5mm 8mm; /* shorthand */
+}
+
+
+nav {
+    & ol {
+        list-style-type: square;
+        background-color: rgba(255, 255, 255, 0.35);
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+    }
+}
+
+#wk3-notes {
+    grid-template-rows: auto auto;
+}
+
+body:has(video) {
+    outline: 2px dashed transparent;
+}
+
+input:hover {
+    border-color: navy;
+}
+
+input[type="radio"] {
+    accent-color: color-mix(in oklab, #114728 60%, white);
+}
+
+a:active {
+    color: color-mix(in oklab, #114728 60%, white);
+}
+
+* {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: orbitron, sans-serif, arial;
+
+}
+
+#objective {
+    color: color-mix(in oklab, #114728 60%, white);
+    text-decoration: underline;
+
+}
+
+#wk2-notes {
+    display: block;
+}
+
+#wk3-notes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    row-gap: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+.attendence {
+    display: inline-block;
+    height: 0.5em;
+    width: 75%;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}

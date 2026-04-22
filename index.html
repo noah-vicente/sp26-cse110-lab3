@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>Group Project Meeting Minutes</title>
+        <title>Team Zingerz Meeting Minutes</title>
         <meta content = "Group Project Meeting Minutes" property = "og:title">
         <meta name = "description" content = "Notes for latest and previous meetings">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <link rel = "icon" href = "screenshots/logo.svg">
+        <link rel = "stylesheet" href = "styles.css">
+        <style>
+            section {
+                background-color: rgb(250, 238, 222);
+                margin: 30px 40px 40px 40px;
+                min-width: 5cm;
+                width: 20cm;
+                max-width: 30cm;
+                padding: 5mm 8mm 8mm 5mm;
+            }
+        </style>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
         <header>
-            <h1> Meeting Minutes</h1>
-            <p>
+            <h1 style = "color:grey"> <i>Team Zingerz</i> Meeting Minutes</h1>
+            <p id = "objective">
                 Hi everyone. Please take notes for each meeting here to keep
                 record of our work, progress, and goals!
             </p>
@@ -25,10 +41,10 @@
             <hr>
         </header>
         <main>
-            <div>
+            <div id="wk2-notes">
                 <h2 id = "wk2">Week 2 Meeting: <em>4/1/26</em></h2>
                 <section>
-                    <h3>Icebreaker Assignments!</h3>
+                    <h3 class = "meeting-name">Icebreaker Assignments!</h3>
                     <h3> Agenda: </h3>
                     <p> <strong>Previous Business:</strong> </p>
                     <ul>
@@ -46,16 +62,16 @@
                     </ul>    
                     <details>
                         <summary>Attendence List: </summary>
-                        <p>Present: <span>Barry, Harry, Larry, Mary, Jerry</span></p>
-                        <p>Absent: <span>Don, John, Ron</span></p>
+                        <p class="attendence">Present: Barry, Harry, Larry, Mary, Jerry</p>
+                        <p class="attendence">Absent: Don, John, Ron</p>
                     </details>
                 </section>
-                <p><b>Questions?: </b></p>
+                <p><b>Attachments: </b></p>
                 <img src = "screenshots/team20activity.jpg" alt = "Icebreaker Assignment" width = "200" height = "300">
             </div>
             <br>
             <hr>
-            <div>
+            <div id="wk3-notes">
                 <h2 id = "wk3">Week 3 Meeting: <i>4/8/26</i></h2>
                 <video width = "400" height = "200" controls>
                     <source src = "nature.mp4" type = "video/mp4">
@@ -64,35 +80,34 @@
                 <audio controls>
                     <source src = "ambience.mp3" type = "audio/mpeg">
                 </audio>
+                <form> 
+                    <input type = "date">
+                    <label>Pick: </label>
+                    <input list = "stuff"> 
+                    <datalist id = "stuff">
+                        <option value = "Beep"></option>
+                        <option value = "Boop"></option>
+                    </datalist>
+                    <fieldset> 
+                        Click Buttons Here
+                        <input type = "checkbox">
+                        <br>
+                        <input type = "radio" name = "radio">
+                        <input type = "radio" name = "radio">
+                        <br>
+                        <select>
+                            <option>Beep</option>
+                            <option>Boop</option>
+                        </select>
+                        <br>
+                        <button> Beep </button>
+                        <textarea>type here</textarea>
+                    </fieldset>
+                </form>
             </div>
-            <hr>
-            <br>
         </main>
         <footer>
-            <form> 
-                <input type = "date">
-                <label>Pick: </label>
-                <input list = "stuff"> 
-                <datalist id = "stuff">
-                    <option value = "Beep"></option>
-                    <option value = "Boop"></option>
-                </datalist>
-                <fieldset> 
-                    Click Buttons Here
-                    <input type = "checkbox">
-                    <br>
-                    <input type = "radio" name = "radio">
-                    <input type = "radio" name = "radio">
-                    <br>
-                    <select>
-                        <option>Beep</option>
-                        <option>Boop</option>
-                    </select>
-                    <br>
-                    <button> Beep </button>
-                    <textarea>type here</textarea>
-                </fieldset>
-            </form>
+
         </footer>
     </body>
 </html>
