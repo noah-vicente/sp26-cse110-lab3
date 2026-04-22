@@ -49,7 +49,7 @@ h1 ~ p {
 h3.meeting-name {
     font-weight: bold;
     text-align: center;
-    color: color(display-p3 0.7 0.71 0.82);
+    color: rgb(179, 181, 209);
 }
 
 p {
@@ -64,13 +64,11 @@ section {
 }
 
 
-nav {
-    & ol {
-        list-style-type: square;
-        background-color: rgba(255, 255, 255, 0.35);
-        padding: 0.5rem 1rem;
-        border-radius: 10px;
-    }
+nav ol {
+    list-style-type: square;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
 }
 
 #wk3-notes {
